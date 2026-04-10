@@ -20,9 +20,7 @@
     --muted: #8892a4;
     --code-bg: #0a0c16;
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   body {
     background: var(--bg);
     color: var(--text);
@@ -30,7 +28,6 @@
     line-height: 1.8;
     font-size: 16px;
   }
-
   header {
     background: linear-gradient(135deg, #0f1535 0%, #1a1040 50%, #0f1535 100%);
     border-bottom: 2px solid var(--accent1);
@@ -39,14 +36,12 @@
     position: relative;
     overflow: hidden;
   }
-
   header::before {
     content: '';
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse at 50% 0%, rgba(79,142,247,0.15) 0%, transparent 70%);
   }
-
   header h1 {
     font-size: 2.4rem;
     font-weight: 900;
@@ -56,9 +51,7 @@
     margin-bottom: 8px;
     position: relative;
   }
-
   header p { color: var(--muted); font-size: 1rem; position: relative; }
-
   .toc {
     max-width: 900px;
     margin: 30px auto;
@@ -68,7 +61,6 @@
     border-radius: 12px;
     border-right: 4px solid var(--accent2);
   }
-
   .toc h2 { color: var(--accent2); margin-bottom: 14px; font-size: 1.2rem; }
   .toc ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; }
   .toc li a {
@@ -82,13 +74,10 @@
   }
   .toc li a:hover { color: var(--accent1); }
   .toc li a::before { content: '▸'; color: var(--accent1); font-size: 0.7rem; }
-
   main { max-width: 900px; margin: 0 auto; padding: 20px; }
-
   .lecture-section {
     margin: 40px 0;
   }
-
   .lecture-header {
     display: flex;
     align-items: center;
@@ -99,7 +88,6 @@
     border-radius: 8px;
     margin-bottom: 30px;
   }
-
   .lecture-header:nth-child(1) { border-color: var(--accent1); }
   .lecture-num {
     width: 48px; height: 48px;
@@ -110,10 +98,8 @@
     flex-shrink: 0;
     color: #fff;
   }
-
   .lecture-header h2 { font-size: 1.3rem; font-weight: 700; }
   .lecture-header p { font-size: 0.85rem; color: var(--muted); margin-top: 2px; }
-
   .example-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -122,9 +108,7 @@
     overflow: hidden;
     transition: border-color 0.3s;
   }
-
   .example-card:hover { border-color: var(--accent1); }
-
   .example-header {
     padding: 16px 24px;
     background: var(--surface);
@@ -135,13 +119,11 @@
     flex-wrap: wrap;
     gap: 10px;
   }
-
   .example-title {
     font-size: 1rem;
     font-weight: 700;
     color: var(--accent3);
   }
-
   .pattern-badge {
     padding: 4px 14px;
     border-radius: 20px;
@@ -149,15 +131,12 @@
     font-weight: 600;
     letter-spacing: 0.5px;
   }
-
   .badge-creational { background: rgba(167,139,250,0.2); color: var(--accent2); border: 1px solid rgba(167,139,250,0.4); }
   .badge-structural  { background: rgba(79,142,247,0.2); color: var(--accent1); border: 1px solid rgba(79,142,247,0.4); }
   .badge-behavioral  { background: rgba(52,211,153,0.2); color: var(--accent3); border: 1px solid rgba(52,211,153,0.4); }
   .badge-foundation  { background: rgba(251,146,60,0.2); color: var(--accent4); border: 1px solid rgba(251,146,60,0.4); }
   .badge-solid       { background: rgba(244,114,182,0.2); color: var(--accent5); border: 1px solid rgba(244,114,182,0.4); }
-
   .example-body { padding: 20px 24px; }
-
   .section-label {
     font-size: 0.75rem;
     font-weight: 700;
@@ -169,20 +148,17 @@
     align-items: center;
     gap: 8px;
   }
-
   .section-label::after {
     content: '';
     flex: 1;
     height: 1px;
     background: var(--border);
   }
-
   .section-label.q { color: var(--accent4); }
   .section-label.code { color: var(--accent1); }
   .section-label.explain { color: var(--accent3); }
   .section-label.flow { color: var(--accent2); }
   .section-label.callers { color: var(--accent5); }
-
   .question-box {
     background: rgba(251,146,60,0.08);
     border: 1px solid rgba(251,146,60,0.25);
@@ -192,7 +168,6 @@
     color: var(--text);
     line-height: 1.7;
   }
-
   pre {
     background: var(--code-bg);
     border: 1px solid var(--border);
@@ -205,7 +180,6 @@
     direction: ltr;
     text-align: left;
   }
-
   .kw { color: #c678dd; }
   .fn { color: #61afef; }
   .cls { color: #e5c07b; }
@@ -213,7 +187,6 @@
   .cm { color: #5c6370; font-style: italic; }
   .num { color: #d19a66; }
   .dec { color: #56b6c2; }
-
   .explain-box {
     background: rgba(52,211,153,0.06);
     border: 1px solid rgba(52,211,153,0.2);
@@ -222,14 +195,12 @@
     font-size: 0.9rem;
     line-height: 1.9;
   }
-
   .explain-box p { margin-bottom: 8px; }
   .explain-box ul { margin: 8px 0 8px 20px; }
   .explain-box li { margin-bottom: 4px; }
   .hl { color: var(--accent3); font-weight: 600; }
   .hl2 { color: var(--accent1); font-weight: 600; }
   .hl3 { color: var(--accent4); font-weight: 600; }
-
   .flow-box {
     background: rgba(167,139,250,0.06);
     border: 1px solid rgba(167,139,250,0.25);
@@ -238,14 +209,12 @@
     font-size: 0.88rem;
     direction: rtl;
   }
-
   .flow-step {
     display: flex;
     align-items: flex-start;
     gap: 12px;
     margin-bottom: 10px;
   }
-
   .step-num {
     width: 26px; height: 26px;
     background: var(--accent2);
@@ -256,7 +225,6 @@
     flex-shrink: 0;
     color: #fff;
   }
-
   .arrow-chain {
     display: flex;
     flex-wrap: wrap;
@@ -269,7 +237,6 @@
     border: 1px solid rgba(244,114,182,0.2);
     border-radius: 8px;
   }
-
   .chain-item {
     background: rgba(244,114,182,0.15);
     color: var(--accent5);
@@ -279,15 +246,12 @@
     font-size: 0.78rem;
     font-weight: 500;
   }
-
   .chain-arrow { color: var(--muted); font-size: 1rem; }
-
   .divider {
     border: none;
     border-top: 1px solid var(--border);
     margin: 40px 0;
   }
-
   footer {
     text-align: center;
     padding: 30px;
@@ -296,7 +260,15 @@
     border-top: 1px solid var(--border);
     margin-top: 60px;
   }
-
+  .developer-link {
+    color: var(--accent1);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+  .developer-link:hover {
+    color: var(--accent2);
+  }
   @media (max-width: 600px) {
     .toc ul { grid-template-columns: 1fr; }
     header h1 { font-size: 1.6rem; }
@@ -304,12 +276,10 @@
 </style>
 </head>
 <body>
-
 <header>
   <h1>🐍 شرح Python Design Patterns</h1>
   <p>كل مثال فيه الكود + الشرح + مين بينادي مين + الفلو الكامل + نوع الباترن</p>
 </header>
-
 <div class="toc">
   <h2>📚 محتويات الملف</h2>
   <ul>
@@ -320,10 +290,7 @@
     <li><a href="#lec5">Lecture 5 – Behavioral Patterns</a></li>
   </ul>
 </div>
-
 <main>
-
-<!-- ═══════════════════════════════════════════════ LECTURE 1 -->
 <section class="lecture-section" id="lec1">
   <div class="lecture-header">
     <div class="lecture-num" style="background:var(--accent4)">1</div>
@@ -332,8 +299,6 @@
       <p>Clean Code, Modularity, Type Hints, Context Manager, Decorator</p>
     </div>
   </div>
-
-  <!-- Example 1.1 -->
   <div class="example-card" id="l1e1">
     <div class="example-header">
       <span class="example-title">Example 1 — Clean Code Refactoring</span>
@@ -342,22 +307,18 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اعمل function اسمها square_positive بتاخد رقم: لو الرقم موجب ترجع مربعه، لو لأ ترجع None. الكود يكون نظيف وواضح مع type hints.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">def</span> <span class="fn">square_positive</span>(number: <span class="dec">float</span>):
     <span class="str">"""Return square of number if number &gt; 0, otherwise None."""</span>
     <span class="kw">if</span> number &lt;= 0:
         <span class="kw">return</span> <span class="dec">None</span>
     <span class="kw">return</span> number * number
-
 <span class="kw">def</span> <span class="fn">demo</span>():
     tests = [<span class="num">5</span>, <span class="num">0</span>, <span class="num">-3</span>, <span class="num">2.5</span>]
     <span class="kw">for</span> t <span class="kw">in</span> tests:
         <span class="fn">print</span>(<span class="str">f"Input={t:&gt;4} -&gt; Output={square_positive(t)}"</span>)
-
 <span class="kw">if</span> __name__ == <span class="str">"__main__"</span>:
     <span class="fn">demo</span>()</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p>الكود ده مثال على <span class="hl">Clean Code</span> — يعني كتابة كود واضح وسهل القراءة.</p>
@@ -368,7 +329,6 @@
           <li>استخدمنا <span class="hl3">docstring</span> لشرح الدالة — ده من أساسيات الكود النظيف.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">__main__</span><span class="chain-arrow">→</span>
@@ -376,7 +336,6 @@
         <span class="chain-item">square_positive(t)</span><span class="chain-arrow">→</span>
         <span class="chain-item">print نتيجة كل رقم</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>البرنامج بيبدأ من __main__ وينادي demo()</span></div>
@@ -387,8 +346,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Example 1.2 -->
   <div class="example-card" id="l1e2">
     <div class="example-header">
       <span class="example-title">Example 2 — Modular Program Structure</span>
@@ -397,23 +354,18 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اكتب برنامج modular بيقرأ نص من ملف، بينظفه، وبيعد الكلمات. استخدم دوال منفصلة: read_text, clean_text, count_words.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">from</span> pathlib <span class="kw">import</span> <span class="cls">Path</span>
-
 <span class="kw">def</span> <span class="fn">read_text</span>(path: <span class="dec">str</span>) -&gt; <span class="dec">str</span>:
     <span class="str">"""Read all text from a file."""</span>
     <span class="kw">return</span> <span class="cls">Path</span>(path).<span class="fn">read_text</span>(encoding=<span class="str">"utf-8"</span>)
-
 <span class="kw">def</span> <span class="fn">clean_text</span>(text: <span class="dec">str</span>) -&gt; <span class="dec">str</span>:
     <span class="str">"""Normalize whitespace and lowercase the text."""</span>
     normalized = <span class="str">" "</span>.<span class="fn">join</span>(text.<span class="fn">split</span>())
     <span class="kw">return</span> normalized.<span class="fn">lower</span>()
-
 <span class="kw">def</span> <span class="fn">count_words</span>(text: <span class="dec">str</span>) -&gt; <span class="dec">int</span>:
     <span class="str">"""Count words in cleaned text."""</span>
     <span class="kw">return</span> <span class="fn">len</span>(text.<span class="fn">split</span>())
-
 <span class="kw">def</span> <span class="fn">main</span>():
     sample_path = <span class="str">"lecture1_sample.txt"</span>
     <span class="cls">Path</span>(sample_path).<span class="fn">write_text</span>(<span class="str">"  Hello   Python   Students!\nWelcome to   ELC 423.  "</span>, encoding=<span class="str">"utf-8"</span>)
@@ -423,10 +375,8 @@
     <span class="fn">print</span>(<span class="str">"RAW:"</span>, raw)
     <span class="fn">print</span>(<span class="str">"CLEANED:"</span>, cleaned)
     <span class="fn">print</span>(<span class="str">"WORD COUNT:"</span>, n_words)
-
 <span class="kw">if</span> __name__ == <span class="str">"__main__"</span>:
     <span class="fn">main</span>()</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p>المثال ده بيطبق مبدأ <span class="hl">Separation of Concerns</span> — كل دالة مسؤولة عن حاجة واحدة بس.</p>
@@ -438,7 +388,6 @@
           <li>استخدمنا <span class="hl3">pathlib</span> بدل open() القديمة عشان أوضح وأنظف.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">__main__</span><span class="chain-arrow">→</span>
@@ -448,7 +397,6 @@
         <span class="chain-item">count_words()</span><span class="chain-arrow">→</span>
         <span class="chain-item">print النتائج</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتكتب ملف تجريبي على الديسك</span></div>
@@ -459,8 +407,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Example 1.3 -->
   <div class="example-card" id="l1e3">
     <div class="example-header">
       <span class="example-title">Example 3 — Type Hints + safe_divide</span>
@@ -469,22 +415,18 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اكتب دالة safe_divide(a, b) بتقسم a على b. لو b == 0 ترجع None. استخدم type hints.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">from</span> typing <span class="kw">import</span> <span class="cls">Optional</span>
-
 <span class="kw">def</span> <span class="fn">safe_divide</span>(a: <span class="dec">float</span>, b: <span class="dec">float</span>) -&gt; <span class="cls">Optional</span>[<span class="dec">float</span>]:
     <span class="str">"""Return a/b if b != 0, otherwise None."""</span>
     <span class="kw">if</span> b == <span class="num">0</span>:
         <span class="kw">return</span> <span class="dec">None</span>
     <span class="kw">return</span> a / b
-
 <span class="kw">def</span> <span class="fn">main</span>():
     tests = [(<span class="num">10</span>, <span class="num">2</span>), (<span class="num">5</span>, <span class="num">0</span>), (<span class="num">7.5</span>, <span class="num">2.5</span>)]
     <span class="kw">for</span> a, b <span class="kw">in</span> tests:
         result = <span class="fn">safe_divide</span>(a, b)
         <span class="fn">print</span>(<span class="str">f"{a} / {b} = {result}"</span>)</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p><span class="hl">Type Hints</span> بتساعدك تعرف الدالة بتاخد إيه وبترجع إيه من غير ما تشغّل الكود.</p>
@@ -494,7 +436,6 @@
           <li>main() بتجرب 3 حالات: قسمة عادية، قسمة على صفر، وعدد عشري.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">__main__</span><span class="chain-arrow">→</span>
@@ -502,7 +443,6 @@
         <span class="chain-item">safe_divide(a, b)</span><span class="chain-arrow">→</span>
         <span class="chain-item">print النتيجة</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتعمل loop على قايمة الأزواج</span></div>
@@ -513,8 +453,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Example 1.4 -->
   <div class="example-card" id="l1e4">
     <div class="example-header">
       <span class="example-title">Example 4 — Context Manager (with)</span>
@@ -523,17 +461,14 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اكتب برنامج يكتب أسماء طلاب في ملف ويقراهم تاني باستخدام context manager (with).</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">def</span> <span class="fn">write_students</span>(path: <span class="dec">str</span>, students: <span class="dec">list</span>[<span class="dec">str</span>]) -&gt; <span class="dec">None</span>:
     <span class="kw">with</span> <span class="fn">open</span>(path, <span class="str">"w"</span>, encoding=<span class="str">"utf-8"</span>) <span class="kw">as</span> f:
         <span class="kw">for</span> name <span class="kw">in</span> students:
             f.<span class="fn">write</span>(name + <span class="str">"\n"</span>)
-
 <span class="kw">def</span> <span class="fn">read_students</span>(path: <span class="dec">str</span>) -&gt; <span class="dec">list</span>[<span class="dec">str</span>]:
     <span class="kw">with</span> <span class="fn">open</span>(path, <span class="str">"r"</span>, encoding=<span class="str">"utf-8"</span>) <span class="kw">as</span> f:
         <span class="kw">return</span> [line.<span class="fn">strip</span>() <span class="kw">for</span> line <span class="kw">in</span> f <span class="kw">if</span> line.<span class="fn">strip</span>()]
-
 <span class="kw">def</span> <span class="fn">main</span>():
     file_path = <span class="str">"students.txt"</span>
     students = [<span class="str">"Ahmed"</span>, <span class="str">"Mona"</span>, <span class="str">"Hany"</span>, <span class="str">"Sara"</span>]
@@ -541,7 +476,6 @@
     loaded = <span class="fn">read_students</span>(file_path)
     <span class="fn">print</span>(<span class="str">"Saved students:"</span>, students)
     <span class="fn">print</span>(<span class="str">"Loaded students:"</span>, loaded)</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p>الـ <span class="hl">Context Manager (with)</span> بيضمن إن الملف هيتقفل تلقائياً حتى لو في error.</p>
@@ -551,7 +485,6 @@
           <li>الـ <span class="hl3">list comprehension</span> <code>[line.strip() for line in f if line.strip()]</code> بتقرا وتنظف في خطوة واحدة.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -561,7 +494,6 @@
         <span class="chain-item">read_students()</span><span class="chain-arrow">→</span>
         <span class="chain-item">open() + strip()</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتعرّف القايمة والمسار</span></div>
@@ -571,8 +503,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Example 1.5 -->
   <div class="example-card" id="l1e5">
     <div class="example-header">
       <span class="example-title">Example 5 — Decorator (timer)</span>
@@ -581,11 +511,9 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اعمل decorator اسمه timer بيقيس وقت تنفيذ أي دالة، وطبقه على دالة بتحسب مجموع من 1 لـ n.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">import</span> time
 <span class="kw">from</span> functools <span class="kw">import</span> wraps
-
 <span class="kw">def</span> <span class="fn">timer</span>(func):
     <span class="str">"""Decorator to measure execution time."""</span>
     @<span class="fn">wraps</span>(func)
@@ -596,15 +524,12 @@
         <span class="fn">print</span>(<span class="str">f"[TIMER] {func.__name__} took {(end - start):.6f} seconds"</span>)
         <span class="kw">return</span> value
     <span class="kw">return</span> wrapper
-
 @<span class="fn">timer</span>
 <span class="kw">def</span> <span class="fn">sum_to_n</span>(n: <span class="dec">int</span>) -&gt; <span class="dec">int</span>:
     <span class="kw">return</span> <span class="fn">sum</span>(<span class="fn">range</span>(<span class="num">1</span>, n + <span class="num">1</span>))
-
 <span class="kw">def</span> <span class="fn">main</span>():
     result = <span class="fn">sum_to_n</span>(<span class="num">5_000_000</span>)
     <span class="fn">print</span>(<span class="str">"Result:"</span>, result)</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p>الـ <span class="hl">Decorator</span> ده بيضيف سلوك جديد (قياس الوقت) على أي دالة من غير ما تعدّلها.</p>
@@ -616,7 +541,6 @@
           <li><span class="hl3">perf_counter()</span>: أدق من time.time() لقياس الأداء.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -625,7 +549,6 @@
         <span class="chain-item">func() [الأصلية]</span><span class="chain-arrow">→</span>
         <span class="chain-item">print الوقت</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>عند تعريف sum_to_n بـ @timer → Python بينفذ: sum_to_n = timer(sum_to_n)</span></div>
@@ -638,10 +561,7 @@
     </div>
   </div>
 </section>
-
 <hr class="divider">
-
-<!-- ═══════════════════════════════════════════════ LECTURE 2 -->
 <section class="lecture-section" id="lec2">
   <div class="lecture-header">
     <div class="lecture-num" style="background:var(--accent5)">2</div>
@@ -650,8 +570,6 @@
       <p>SRP, OCP, LSP, ISP, DIP</p>
     </div>
   </div>
-
-  <!-- Example 2.1 -->
   <div class="example-card">
     <div class="example-header">
       <span class="example-title">Example 1 — SRP: Single Responsibility Principle</span>
@@ -660,28 +578,23 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">افصل مسؤولية حساب المتوسط عن مسؤولية الطباعة. اعمل StudentGrades للبيانات، وReportPrinter للطباعة.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">class</span> <span class="cls">StudentGrades</span>:
     <span class="kw">def</span> <span class="fn">__init__</span>(self, student_name: <span class="dec">str</span>, grades: <span class="dec">list</span>[<span class="dec">float</span>]):
         self.student_name = student_name
         self.grades = grades
-
     <span class="kw">def</span> <span class="fn">average</span>(self) -&gt; <span class="dec">float</span>:
         <span class="kw">if not</span> self.grades: <span class="kw">return</span> <span class="num">0.0</span>
         <span class="kw">return</span> <span class="fn">sum</span>(self.grades) / <span class="fn">len</span>(self.grades)
-
 <span class="kw">class</span> <span class="cls">ReportPrinter</span>:
     <span class="kw">def</span> <span class="fn">print_report</span>(self, student: <span class="cls">StudentGrades</span>) -&gt; <span class="dec">None</span>:
         avg = student.<span class="fn">average</span>()
         <span class="fn">print</span>(<span class="str">f"Student: {student.student_name}"</span>)
         <span class="fn">print</span>(<span class="str">f"Average: {avg:.2f}"</span>)
-
 <span class="kw">def</span> <span class="fn">main</span>():
     student = <span class="cls">StudentGrades</span>(<span class="str">"Ahmed"</span>, [<span class="num">90</span>, <span class="num">85</span>, <span class="num">92</span>, <span class="num">88</span>, <span class="num">95</span>])
     printer = <span class="cls">ReportPrinter</span>()
     printer.<span class="fn">print_report</span>(student)</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p><span class="hl">SRP</span>: كل class مسؤول عن حاجة واحدة بس — لو عندك سبب واحد للتغيير = تمام.</p>
@@ -691,7 +604,6 @@
           <li>الفايدة: لو عايز تغير طريقة العرض → تعدل ReportPrinter بس. لو عايز تضيف GPA → تعدل StudentGrades بس.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -699,7 +611,6 @@
         <span class="chain-item">student.average()</span><span class="chain-arrow">→</span>
         <span class="chain-item">print النتيجة</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتنشئ StudentGrades بالاسم والدرجات</span></div>
@@ -710,8 +621,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Example 2.2 -->
   <div class="example-card">
     <div class="example-header">
       <span class="example-title">Example 2 — OCP: Open/Closed Principle</span>
@@ -720,36 +629,28 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اعمل نظام دفع: PaymentProcessor يشتغل مع أي طريقة دفع جديدة من غير ما تعدّل الـ processor نفسه.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">from</span> abc <span class="kw">import</span> <span class="cls">ABC</span>, abstractmethod
-
 <span class="kw">class</span> <span class="cls">PaymentMethod</span>(<span class="cls">ABC</span>):
     @abstractmethod
     <span class="kw">def</span> <span class="fn">pay</span>(self, amount: <span class="dec">float</span>) -&gt; <span class="dec">None</span>: <span class="kw">pass</span>
-
 <span class="kw">class</span> <span class="cls">CreditCardPayment</span>(<span class="cls">PaymentMethod</span>):
     <span class="kw">def</span> <span class="fn">pay</span>(self, amount: <span class="dec">float</span>) -&gt; <span class="dec">None</span>:
         <span class="fn">print</span>(<span class="str">f"[Credit Card] Paid {amount:.2f} EGP"</span>)
-
 <span class="kw">class</span> <span class="cls">CashPayment</span>(<span class="cls">PaymentMethod</span>):
     <span class="kw">def</span> <span class="fn">pay</span>(self, amount: <span class="dec">float</span>) -&gt; <span class="dec">None</span>:
         <span class="fn">print</span>(<span class="str">f"[Cash] Paid {amount:.2f} EGP"</span>)
-
 <span class="kw">class</span> <span class="cls">BankTransferPayment</span>(<span class="cls">PaymentMethod</span>):   <span class="cm"># مضاف بدون تعديل PaymentProcessor</span>
     <span class="kw">def</span> <span class="fn">pay</span>(self, amount: <span class="dec">float</span>) -&gt; <span class="dec">None</span>:
         <span class="fn">print</span>(<span class="str">f"[Bank Transfer] Paid {amount:.2f} EGP"</span>)
-
 <span class="kw">class</span> <span class="cls">PaymentProcessor</span>:
     <span class="kw">def</span> <span class="fn">__init__</span>(self, method: <span class="cls">PaymentMethod</span>):
         self.method = method
     <span class="kw">def</span> <span class="fn">process</span>(self, amount: <span class="dec">float</span>) -&gt; <span class="dec">None</span>:
         self.method.<span class="fn">pay</span>(amount)   <span class="cm"># Polymorphism — no if/else!</span>
-
 <span class="kw">def</span> <span class="fn">main</span>():
     <span class="kw">for</span> method <span class="kw">in</span> (<span class="cls">CreditCardPayment</span>(), <span class="cls">CashPayment</span>(), <span class="cls">BankTransferPayment</span>()):
         <span class="cls">PaymentProcessor</span>(method).<span class="fn">process</span>(<span class="num">250.0</span>)</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p><span class="hl">OCP</span>: الكود مفتوح للإضافة (Open for extension) لكن مغلق للتعديل (Closed for modification).</p>
@@ -759,7 +660,6 @@
           <li>عايز تضيف Bitcoin؟ → اعمل class جديد يورث من PaymentMethod بس. <span class="hl3">مش هتعدل PaymentProcessor خالص.</span></li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -768,7 +668,6 @@
         <span class="chain-item">method.pay(250)</span><span class="chain-arrow">→ [polymorphism]</span>
         <span class="chain-item">CreditCard / Cash / BankTransfer</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتعمل loop على الـ 3 طرق دفع</span></div>
@@ -778,8 +677,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Example 2.3 -->
   <div class="example-card">
     <div class="example-header">
       <span class="example-title">Example 3 — LSP: Liskov Substitution Principle</span>
@@ -788,27 +685,21 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اعمل Bird base class. اعمل Sparrow وPenguin بيرثوا منها. الدالة make_bird_move() لازم تشتغل مع أي bird بدون افتراضات.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">class</span> <span class="cls">Bird</span>:
     <span class="kw">def</span> <span class="fn">move</span>(self) -&gt; <span class="dec">None</span>:
         <span class="kw">raise</span> <span class="cls">NotImplementedError</span>
-
 <span class="kw">class</span> <span class="cls">Sparrow</span>(<span class="cls">Bird</span>):
     <span class="kw">def</span> <span class="fn">move</span>(self) -&gt; <span class="dec">None</span>:
         <span class="fn">print</span>(<span class="str">"Sparrow flies in the sky."</span>)
-
 <span class="kw">class</span> <span class="cls">Penguin</span>(<span class="cls">Bird</span>):
     <span class="kw">def</span> <span class="fn">move</span>(self) -&gt; <span class="dec">None</span>:
         <span class="fn">print</span>(<span class="str">"Penguin swims in the water."</span>)
-
 <span class="kw">def</span> <span class="fn">make_bird_move</span>(bird: <span class="cls">Bird</span>) -&gt; <span class="dec">None</span>:
     bird.<span class="fn">move</span>()   <span class="cm"># works for ANY Bird subclass</span>
-
 <span class="kw">def</span> <span class="fn">main</span>():
     <span class="kw">for</span> b <span class="kw">in</span> [<span class="cls">Sparrow</span>(), <span class="cls">Penguin</span>()]:
         <span class="fn">make_bird_move</span>(b)</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p><span class="hl">LSP</span>: أي subclass لازم تقدر تحل محل الـ base class من غير ما البرنامج يتعطل.</p>
@@ -819,7 +710,6 @@
           <li>Sparrow → بتطير | Penguin → بتسبح. كلاهما يحل محل Bird بأمان.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -828,7 +718,6 @@
         <span class="chain-item">make_bird_move(Penguin)</span><span class="chain-arrow">→</span>
         <span class="chain-item">Penguin.move()</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتعمل Sparrow وPenguin</span></div>
@@ -838,8 +727,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Example 2.4 -->
   <div class="example-card">
     <div class="example-header">
       <span class="example-title">Example 4 — ISP: Interface Segregation Principle</span>
@@ -848,29 +735,23 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">بدل interface واحد كبير (Machine: print, scan, fax) → قسّمه لـ interfaces صغيرة. SimplePrinter يطبع بس، MultiFunctionDevice يطبع ويسكن.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">from</span> abc <span class="kw">import</span> <span class="cls">ABC</span>, abstractmethod
-
 <span class="kw">class</span> <span class="cls">Printer</span>(<span class="cls">ABC</span>):
     @abstractmethod
     <span class="kw">def</span> <span class="fn">print_doc</span>(self, text: <span class="dec">str</span>) -&gt; <span class="dec">None</span>: <span class="kw">pass</span>
-
 <span class="kw">class</span> <span class="cls">Scanner</span>(<span class="cls">ABC</span>):
     @abstractmethod
     <span class="kw">def</span> <span class="fn">scan_doc</span>(self) -&gt; <span class="dec">str</span>: <span class="kw">pass</span>
-
 <span class="kw">class</span> <span class="cls">SimplePrinter</span>(<span class="cls">Printer</span>):
     <span class="kw">def</span> <span class="fn">print_doc</span>(self, text: <span class="dec">str</span>) -&gt; <span class="dec">None</span>:
         <span class="fn">print</span>(<span class="str">f"[SimplePrinter] Printing: {text}"</span>)
-
 <span class="kw">class</span> <span class="cls">MultiFunctionDevice</span>(<span class="cls">Printer</span>, <span class="cls">Scanner</span>):
     <span class="kw">def</span> <span class="fn">print_doc</span>(self, text: <span class="dec">str</span>) -&gt; <span class="dec">None</span>:
         <span class="fn">print</span>(<span class="str">f"[MFD] Printing: {text}"</span>)
     <span class="kw">def</span> <span class="fn">scan_doc</span>(self) -&gt; <span class="dec">str</span>:
         <span class="fn">print</span>(<span class="str">"[MFD] Scanning document..."</span>)
         <span class="kw">return</span> <span class="str">"Scanned document content"</span></pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p><span class="hl">ISP</span>: متجبرش أي class على implement وظائف مش محتاجها.</p>
@@ -881,7 +762,6 @@
           <li><span class="hl2">MultiFunctionDevice</span>: بتورث Printer AND Scanner → بتعمل الاتنين.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -890,7 +770,6 @@
         <span class="chain-item">MFD.print_doc()</span><span class="chain-arrow">+</span>
         <span class="chain-item">MFD.scan_doc()</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتنشئ SimplePrinter → بتنادي print_doc("Hello ISP!")</span></div>
@@ -900,8 +779,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Example 2.5 -->
   <div class="example-card">
     <div class="example-header">
       <span class="example-title">Example 5 — DIP: Dependency Inversion Principle</span>
@@ -910,34 +787,27 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">AlertService لازم تعتمد على Notifier abstraction مش على EmailNotifier مباشرة. استخدم Dependency Injection.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">from</span> abc <span class="kw">import</span> <span class="cls">ABC</span>, abstractmethod
-
 <span class="kw">class</span> <span class="cls">Notifier</span>(<span class="cls">ABC</span>):
     @abstractmethod
     <span class="kw">def</span> <span class="fn">send</span>(self, message: <span class="dec">str</span>) -&gt; <span class="dec">None</span>: <span class="kw">pass</span>
-
 <span class="kw">class</span> <span class="cls">EmailNotifier</span>(<span class="cls">Notifier</span>):
     <span class="kw">def</span> <span class="fn">send</span>(self, message: <span class="dec">str</span>) -&gt; <span class="dec">None</span>:
         <span class="fn">print</span>(<span class="str">f"[EMAIL] {message}"</span>)
-
 <span class="kw">class</span> <span class="cls">SMSNotifier</span>(<span class="cls">Notifier</span>):
     <span class="kw">def</span> <span class="fn">send</span>(self, message: <span class="dec">str</span>) -&gt; <span class="dec">None</span>:
         <span class="fn">print</span>(<span class="str">f"[SMS] {message}"</span>)
-
 <span class="kw">class</span> <span class="cls">FakeNotifier</span>(<span class="cls">Notifier</span>):   <span class="cm"># For testing</span>
     <span class="kw">def</span> <span class="fn">__init__</span>(self):
         self.sent_messages: <span class="dec">list</span>[<span class="dec">str</span>] = []
     <span class="kw">def</span> <span class="fn">send</span>(self, message: <span class="dec">str</span>) -&gt; <span class="dec">None</span>:
         self.sent_messages.<span class="fn">append</span>(message)
-
 <span class="kw">class</span> <span class="cls">AlertService</span>:
     <span class="kw">def</span> <span class="fn">__init__</span>(self, notifier: <span class="cls">Notifier</span>):   <span class="cm"># Depends on abstraction!</span>
         self.notifier = notifier
     <span class="kw">def</span> <span class="fn">alert</span>(self, level: <span class="dec">str</span>, details: <span class="dec">str</span>) -&gt; <span class="dec">None</span>:
         self.notifier.<span class="fn">send</span>(<span class="str">f"ALERT [{level}]: {details}"</span>)</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p><span class="hl">DIP</span>: المستوى العالي (AlertService) لازم يعتمد على abstraction مش على تفاصيل concrete classes.</p>
@@ -948,7 +818,6 @@
           <li>ده بيخلي الكود سهل الاختبار (testable) وسهل التوسع (extensible).</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -957,7 +826,6 @@
         <span class="chain-item">notifier.send()</span><span class="chain-arrow">→</span>
         <span class="chain-item">EmailNotifier.send()</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتنشئ AlertService وتحقن فيه EmailNotifier</span></div>
@@ -969,10 +837,7 @@
     </div>
   </div>
 </section>
-
 <hr class="divider">
-
-<!-- ═══════════════════════════════════════════════ LECTURE 3 -->
 <section class="lecture-section" id="lec3">
   <div class="lecture-header">
     <div class="lecture-num" style="background:var(--accent2)">3</div>
@@ -981,8 +846,6 @@
       <p>Factory, Abstract Factory, Builder, Prototype, Singleton</p>
     </div>
   </div>
-
-  <!-- 3.1 -->
   <div class="example-card">
     <div class="example-header">
       <span class="example-title">Example 1 — Factory Method Pattern</span>
@@ -991,35 +854,28 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اعمل factory function لإنشاء shapes (Circle, Rectangle) بدون ما الـ client ينشئهم مباشرة.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">from</span> abc <span class="kw">import</span> <span class="cls">ABC</span>, abstractmethod
 <span class="kw">import</span> math
-
 <span class="kw">class</span> <span class="cls">Shape</span>(<span class="cls">ABC</span>):
     @abstractmethod
     <span class="kw">def</span> <span class="fn">area</span>(self) -&gt; <span class="dec">float</span>: <span class="kw">pass</span>
-
 <span class="kw">class</span> <span class="cls">Circle</span>(<span class="cls">Shape</span>):
     <span class="kw">def</span> <span class="fn">__init__</span>(self, radius: <span class="dec">float</span>): self.radius = radius
     <span class="kw">def</span> <span class="fn">area</span>(self) -&gt; <span class="dec">float</span>: <span class="kw">return</span> math.pi * self.radius ** <span class="num">2</span>
-
 <span class="kw">class</span> <span class="cls">Rectangle</span>(<span class="cls">Shape</span>):
     <span class="kw">def</span> <span class="fn">__init__</span>(self, width: <span class="dec">float</span>, height: <span class="dec">float</span>):
         self.width = width; self.height = height
     <span class="kw">def</span> <span class="fn">area</span>(self) -&gt; <span class="dec">float</span>: <span class="kw">return</span> self.width * self.height
-
 <span class="kw">def</span> <span class="fn">create_shape</span>(shape_type: <span class="dec">str</span>, **kwargs) -&gt; <span class="cls">Shape</span>:
     <span class="kw">if</span> shape_type == <span class="str">"circle"</span>: <span class="kw">return</span> <span class="cls">Circle</span>(radius=kwargs[<span class="str">"radius"</span>])
     <span class="kw">if</span> shape_type == <span class="str">"rectangle"</span>: <span class="kw">return</span> <span class="cls">Rectangle</span>(kwargs[<span class="str">"width"</span>], kwargs[<span class="str">"height"</span>])
     <span class="kw">raise</span> <span class="cls">ValueError</span>(<span class="str">f"Unknown shape: {shape_type}"</span>)
-
 <span class="kw">def</span> <span class="fn">main</span>():
     s1 = <span class="fn">create_shape</span>(<span class="str">"circle"</span>, radius=<span class="num">5</span>)
     s2 = <span class="fn">create_shape</span>(<span class="str">"rectangle"</span>, width=<span class="num">4</span>, height=<span class="num">6</span>)
     <span class="fn">print</span>(<span class="str">"Circle area:"</span>, <span class="fn">round</span>(s1.<span class="fn">area</span>(), <span class="num">3</span>))
     <span class="fn">print</span>(<span class="str">"Rectangle area:"</span>, <span class="fn">round</span>(s2.<span class="fn">area</span>(), <span class="num">3</span>))</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p>الـ <span class="hl">Factory Method</span> بيفصل عملية الإنشاء عن الاستخدام — الـ client مش محتاج يعرف الـ class الحقيقية.</p>
@@ -1030,7 +886,6 @@
           <li><span class="hl3">**kwargs</span>: بيسمح بتمرير parameters مختلفة لكل نوع shape.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -1040,7 +895,6 @@
         <span class="chain-item">Rectangle(4,6)</span><span class="chain-arrow">→</span>
         <span class="chain-item">s.area()</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتنادي create_shape بنوع الشكل والأبعاد</span></div>
@@ -1051,8 +905,6 @@
       </div>
     </div>
   </div>
-
-  <!-- 3.2 -->
   <div class="example-card">
     <div class="example-header">
       <span class="example-title">Example 2 — Abstract Factory Pattern</span>
@@ -1061,31 +913,24 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اعمل UI Factory لإنشاء عائلات من components (Light Theme / Dark Theme) — Button و TextBox لكل theme.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">class</span> <span class="cls">LightButton</span>(<span class="cls">Button</span>):
     <span class="kw">def</span> <span class="fn">render</span>(self): <span class="fn">print</span>(<span class="str">"[LightButton] White background"</span>)
-
 <span class="kw">class</span> <span class="cls">DarkButton</span>(<span class="cls">Button</span>):
     <span class="kw">def</span> <span class="fn">render</span>(self): <span class="fn">print</span>(<span class="str">"[DarkButton] Dark background"</span>)
-
 <span class="kw">class</span> <span class="cls">LightFactory</span>(<span class="cls">UIFactory</span>):
     <span class="kw">def</span> <span class="fn">create_button</span>(self): <span class="kw">return</span> <span class="cls">LightButton</span>()
     <span class="kw">def</span> <span class="fn">create_textbox</span>(self): <span class="kw">return</span> <span class="cls">LightTextBox</span>()
-
 <span class="kw">class</span> <span class="cls">DarkFactory</span>(<span class="cls">UIFactory</span>):
     <span class="kw">def</span> <span class="fn">create_button</span>(self): <span class="kw">return</span> <span class="cls">DarkButton</span>()
     <span class="kw">def</span> <span class="fn">create_textbox</span>(self): <span class="kw">return</span> <span class="cls">DarkTextBox</span>()
-
 <span class="kw">def</span> <span class="fn">build_screen</span>(factory: <span class="cls">UIFactory</span>) -&gt; <span class="dec">None</span>:
     btn = factory.<span class="fn">create_button</span>()
     tb  = factory.<span class="fn">create_textbox</span>()
     btn.<span class="fn">render</span>(); tb.<span class="fn">render</span>()
-
 <span class="kw">def</span> <span class="fn">main</span>():
     <span class="fn">build_screen</span>(<span class="cls">LightFactory</span>())   <span class="cm"># Light theme</span>
     <span class="fn">build_screen</span>(<span class="cls">DarkFactory</span>())    <span class="cm"># Dark theme</span></pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p>الـ <span class="hl">Abstract Factory</span> بينشئ عائلة من الـ objects المترابطة — لو اخترت Light كل حاجة Light.</p>
@@ -1096,7 +941,6 @@
           <li>الفرق عن Factory Method: هنا بننشئ <span class="hl3">عائلة</span> من الـ objects مش object واحد.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -1104,7 +948,6 @@
         <span class="chain-item">factory.create_button()</span><span class="chain-arrow">→</span>
         <span class="chain-item">LightButton.render()</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتنادي build_screen مع LightFactory</span></div>
@@ -1115,8 +958,6 @@
       </div>
     </div>
   </div>
-
-  <!-- 3.3 -->
   <div class="example-card">
     <div class="example-header">
       <span class="example-title">Example 3 — Builder Pattern</span>
@@ -1125,17 +966,14 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اعمل Computer builder خطوة بخطوة باستخدام method chaining. اعمل Gaming PC وOffice PC.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">from</span> dataclasses <span class="kw">import</span> dataclass
-
 @dataclass
 <span class="kw">class</span> <span class="cls">Computer</span>:
     cpu: <span class="dec">str</span> | <span class="dec">None</span> = <span class="dec">None</span>
     ram: <span class="dec">str</span> | <span class="dec">None</span> = <span class="dec">None</span>
     storage: <span class="dec">str</span> | <span class="dec">None</span> = <span class="dec">None</span>
     gpu: <span class="dec">str</span> | <span class="dec">None</span> = <span class="dec">None</span>
-
 <span class="kw">class</span> <span class="cls">ComputerBuilder</span>:
     <span class="kw">def</span> <span class="fn">__init__</span>(self): self._computer = <span class="cls">Computer</span>()
     <span class="kw">def</span> <span class="fn">cpu</span>(self, cpu): self._computer.cpu = cpu; <span class="kw">return</span> self
@@ -1146,14 +984,12 @@
         built = self._computer
         self._computer = <span class="cls">Computer</span>()   <span class="cm"># reset for next build</span>
         <span class="kw">return</span> built
-
 <span class="kw">def</span> <span class="fn">main</span>():
     builder = <span class="cls">ComputerBuilder</span>()
     gaming = builder.<span class="fn">cpu</span>(<span class="str">"Intel i7"</span>).<span class="fn">ram</span>(<span class="str">"32GB"</span>).<span class="fn">storage</span>(<span class="str">"1TB SSD"</span>).<span class="fn">gpu</span>(<span class="str">"RTX 4070"</span>).<span class="fn">build</span>()
     office = builder.<span class="fn">cpu</span>(<span class="str">"Intel i5"</span>).<span class="fn">ram</span>(<span class="str">"16GB"</span>).<span class="fn">storage</span>(<span class="str">"512GB SSD"</span>).<span class="fn">build</span>()
     <span class="fn">print</span>(<span class="str">"Gaming PC:"</span>, gaming)
     <span class="fn">print</span>(<span class="str">"Office PC:"</span>, office)</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p>الـ <span class="hl">Builder Pattern</span> بيبني objects معقدة خطوة بخطوة باستخدام method chaining.</p>
@@ -1165,7 +1001,6 @@
           <li>الفايدة: ممكن تعمل Computer بدون GPU (Office) أو بـ GPU (Gaming) بنفس الـ builder.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -1176,7 +1011,6 @@
         <span class="chain-item">.build()</span><span class="chain-arrow">→</span>
         <span class="chain-item">Computer object</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>ComputerBuilder.__init__() بينشئ Computer فاضي</span></div>
@@ -1186,8 +1020,6 @@
       </div>
     </div>
   </div>
-
-  <!-- 3.4 -->
   <div class="example-card">
     <div class="example-header">
       <span class="example-title">Example 4 — Prototype Pattern</span>
@@ -1196,21 +1028,17 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اعمل TrainingConfig بيقدر يتكلون (clone) باستخدام deep copy. عمل variant منه بـ learning rate مختلف وآخر بـ batch size مختلف.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">import</span> copy
 <span class="kw">from</span> dataclasses <span class="kw">import</span> dataclass
-
 @dataclass
 <span class="kw">class</span> <span class="cls">TrainingConfig</span>:
     model_name: <span class="dec">str</span>
     learning_rate: <span class="dec">float</span>
     batch_size: <span class="dec">int</span>
     epochs: <span class="dec">int</span>
-
     <span class="kw">def</span> <span class="fn">clone</span>(self) -&gt; <span class="str">"TrainingConfig"</span>:
         <span class="kw">return</span> copy.<span class="fn">deepcopy</span>(self)
-
 <span class="kw">def</span> <span class="fn">main</span>():
     base = <span class="cls">TrainingConfig</span>(<span class="str">"CNN"</span>, learning_rate=<span class="num">0.001</span>, batch_size=<span class="num">32</span>, epochs=<span class="num">20</span>)
     variant_lr = base.<span class="fn">clone</span>(); variant_lr.learning_rate = <span class="num">0.0005</span>
@@ -1218,7 +1046,6 @@
     <span class="fn">print</span>(<span class="str">"Base      :"</span>, base)
     <span class="fn">print</span>(<span class="str">"Variant LR:"</span>, variant_lr)
     <span class="fn">print</span>(<span class="str">"Variant BS:"</span>, variant_bs)</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p>الـ <span class="hl">Prototype Pattern</span> بيسمح بإنشاء نسخة من object موجود بدل إنشاء واحد جديد من الصفر.</p>
@@ -1229,7 +1056,6 @@
           <li>النسخ الثلاثة مستقلة تماماً — أي تغيير في واحدة ما بيأثرش على التانية.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -1238,7 +1064,6 @@
         <span class="chain-item">variant جديد مستقل</span><span class="chain-arrow">→</span>
         <span class="chain-item">تعديل variant</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>main() بتنشئ base TrainingConfig</span></div>
@@ -1249,8 +1074,6 @@
       </div>
     </div>
   </div>
-
-  <!-- 3.5 -->
   <div class="example-card">
     <div class="example-header">
       <span class="example-title">Example 5 — Singleton Pattern</span>
@@ -1259,25 +1082,20 @@
     <div class="example-body">
       <div class="section-label q">السؤال</div>
       <div class="question-box">اعمل LoggerSingleton بيضمن وجود instance واحد بس في البرنامج كله. برهن إن logger1 و logger2 نفس الـ object.</div>
-
       <div class="section-label code">الكود</div>
       <pre><span class="kw">class</span> <span class="cls">LoggerSingleton</span>:
     <span class="cm">"""Singleton logger — use carefully."""</span>
     _instance = <span class="dec">None</span>
-
     <span class="kw">def</span> <span class="fn">__new__</span>(cls):
         <span class="kw">if</span> cls._instance <span class="kw">is None</span>:
             cls._instance = <span class="fn">super</span>().<span class="fn">__new__</span>(cls)
             cls._instance._logs = []
         <span class="kw">return</span> cls._instance
-
     <span class="kw">def</span> <span class="fn">log</span>(self, message: <span class="dec">str</span>) -&gt; <span class="dec">None</span>:
         self._logs.<span class="fn">append</span>(message)
-
     <span class="kw">def</span> <span class="fn">show_logs</span>(self) -&gt; <span class="dec">None</span>:
         <span class="kw">for</span> i, msg <span class="kw">in</span> <span class="fn">enumerate</span>(self._logs, <span class="num">1</span>):
             <span class="fn">print</span>(<span class="str">f"{i}. {msg}"</span>)
-
 <span class="kw">def</span> <span class="fn">main</span>():
     logger1 = <span class="cls">LoggerSingleton</span>()
     logger2 = <span class="cls">LoggerSingleton</span>()
@@ -1285,7 +1103,6 @@
     logger1.<span class="fn">log</span>(<span class="str">"System started"</span>)
     logger2.<span class="fn">log</span>(<span class="str">"User logged in"</span>)
     logger1.<span class="fn">show_logs</span>()</pre>
-
       <div class="section-label explain">الشرح</div>
       <div class="explain-box">
         <p>الـ <span class="hl">Singleton Pattern</span> بيضمن إن class معينة عندها instance واحد بس في البرنامج كله.</p>
@@ -1297,7 +1114,6 @@
           <li>⚠️ استخدمه بحذر: بيصعّب الـ testing وممكن يسبب مشاكل في multi-threading.</li>
         </ul>
       </div>
-
       <div class="section-label callers">مين بينادي مين؟</div>
       <div class="arrow-chain">
         <span class="chain-item">main()</span><span class="chain-arrow">→</span>
@@ -1305,7 +1121,6 @@
         <span class="chain-item">نفس الـ instance دايماً</span><span class="chain-arrow">→</span>
         <span class="chain-item">log() + show_logs()</span>
       </div>
-
       <div class="section-label flow">الفلو الكامل</div>
       <div class="flow-box">
         <div class="flow-step"><span class="step-num">1</span><span>LoggerSingleton() → Python ينادي __new__ → _instance = None → ينشئ instance جديد</span></div>
@@ -1317,15 +1132,13 @@
     </div>
   </div>
 </section>
-
 <hr class="divider">
-
-
 </main>
-
 <footer>
-  <p>📚 Python Design Patterns – ELC 423 | Lectures 1–5 | كل الحقوق محفوظة</p>
+  <p>📚 Python Design Patterns – ELC 423 | Lectures 1–3 | كل الحقوق محفوظة</p>
+  <p style="margin-top: 10px; font-size: 0.9rem;">
+    تم التطوير بواسطة <a href="https://belalkaram.dev" target="_blank" class="developer-link">Belal Karam</a>
+  </p>
 </footer>
-
 </body>
 </html>
